@@ -4,11 +4,17 @@
   "description": "nodejs message queue for producer and consumer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:producer": "node producer.js",
+    "start:consumer": "node cluster.js"
   },
   "author": "prashant",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "amqplib": "^0.8.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5"
   }
 }
